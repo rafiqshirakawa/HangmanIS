@@ -34,18 +34,24 @@
       <!-- Input for letter entry -->
       <input type="text" id="letter-input" maxlength="1" placeholder="Guess a letter" />
     </div>
+
+    <button id="retry-button">Retry Word</button>
+    
     <!-- Popup -->
     <div class="popup-container" id="popup-container">
       <div class="popup">
         <h2 id="final-message"></h2>
         <h3 id="final-message-reveal-word"></h3>
         <button id="play-button">Play Again</button>
+        <button id="reset-button">Reset Game</button>
       </div>
     </div>
     <!-- Notification -->
     <div class="notification-container" id="notification-container">
       <p>You have already entered this letter</p>
     </div>
+    <audio id="correct-sound" src="correct.wav"></audio>
+    <audio id="wrong-sound" src="wrong.wav"></audio>
     <script src="script.js"></script>
   </body>
 </html>
