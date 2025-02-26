@@ -35,6 +35,10 @@ h3 {
   letter-spacing: 0.2rem;
 }
 
+audio {
+  display: none; /* Hide audio elements */
+}
+
 /* Game Container */
 .game-container {
   padding: 20px 30px;
@@ -199,5 +203,49 @@ input[type="text"]:focus {
 
   .popup button {
     font-size: 1.5rem; /* Larger button text */
+  }
+
+  #reset-button {
+    cursor: pointer;
+    background-color: var(--light-color);
+    color: var(--secondary-color);
+    border: 0;
+    margin-top: 10px; /* Space between buttons */
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-family: inherit;
+    border-radius: 5px;
+  }
+  
+  #reset-button:active {
+    transform: scale(0.98);
+  }
+  
+  #reset-button:focus {
+    outline: none;
+  }
+
+  #retry-button {
+    cursor: pointer;
+    background-color: var(--light-color);
+    color: var(--secondary-color);
+    border: 0;
+    margin-top: 20px; /* Space above the button */
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-family: inherit;
+    border-radius: 5px;
+  }
+  
+  #retry-button:active {
+    transform: scale(0.98);
+  }
+  
+  #retry-button:focus {
+    outline: none;
+  }
+
+  #reset-button.hidden {
+    display: none;
   }
 }
